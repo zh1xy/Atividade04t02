@@ -33,6 +33,7 @@ public class Principal {
 	public static void questao1_Scanner(Scanner scan) {
 		System.out.println("=== QUESTÃO 1 - SCANNER ===");
 
+
 	}
 	
 	// ========================================
