@@ -1,4 +1,4 @@
-package fag;
+package main.java.fag;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -39,7 +39,7 @@ public class Principal {
         System.out.println("Digite sua idade:");
         int idade = scan.nextInt();
 
-        System.out.println("Ola " + nome + "! Voce tem " + idade + " anos. Seja bem-vindo(a)");
+        System.out.println("Olá " + nome + "! Você tem " + idade + " anos. Seja bem-vindo(a)!");
         System.out.println();
 	}
 	
@@ -94,7 +94,7 @@ public class Principal {
 	public static void questao4_If(Scanner scan) {
 		System.out.println("=== QUESTÃO 4 - IF ===");
 		System.out.println("Digite sua nota (0 a 10):");
-		int nota = scan.nextInt();
+		double nota = scan.nextDouble();
 
         if (nota >= 7) {
             System.out.println("Parabéns! Você foi APROVADO!");
@@ -156,7 +156,7 @@ public class Principal {
 		int num = scan.nextInt();
 
         if (num % 2 == 0) {
-            System.out.println(num + " é um numero par");
+            System.out.println(num + " é um numero PAR");
 
         } else {
             System.out.println(num + " é um numero impar");
@@ -226,8 +226,8 @@ public class Principal {
 	// TODO: Implemente este método para retornar o maior entre dois números
 	public static int encontrarMaior(int a, int b) {
 		Random random = new Random();
-        a =  random.nextInt(10);
-        b =  random.nextInt(10);
+        a =  10;
+        b =  5;
         System.out.println(a);
         System.out.println(b);
         int maior = 0;
@@ -249,14 +249,14 @@ public class Principal {
 	// TODO: Implemente este método para calcular o fatorial de um número
 	// Use um laço for para fazer o cálculo
 	public static long calcularFatorial(int n) {
-        n = 7;
-        int soma = 0;
+        n = 5;
+        long soma = 1;
 
-        for (int i = n; i > 0; i--) {
-            soma = n * i;
-            System.out.println(n + " x " + i + " = " + soma);
+        for (int i = 1; i <= n; i++) {
+            soma *= i;
 
         }
-		return n; // Remova esta linha e implemente a lógica
+        System.out.printf("%d", soma);
+		return soma; // Remova esta linha e implemente a lógica
 	}
 }
